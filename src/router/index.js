@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import loadingMore from '@/components/loadingMore'
+import lazyLoad from '@/components/lazyLoad'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path:'/loadingMore',
       name:'loadingMore',
       component:loadingMore
+    },
+    {
+      path:'/lazyLoad',
+      name:'lazyLoad',
+      component:lazyLoad
     }
   ]
 })

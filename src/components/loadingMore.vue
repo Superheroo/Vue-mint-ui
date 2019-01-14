@@ -5,7 +5,7 @@
         infinite-scroll-distance : 指定滚动条距离底部多高时触发v-infinite-scroll指向的方法 
         infinite-scroll-disabled : 等于true时代表正在执行加载，这时禁用滚动触发。
     -->
-      <li v-for="item in list">{{ item }}</li>
+      <li class="number_list" v-for="item in list">{{ item }}</li>
     </ul>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   name: "loadingMore",
   data() {
     return {
-      list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      list: [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
       loading: false
     };
   },
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style>
-ul li {
+ul .number_list {
   width: 100%;
   height: 60px;
   line-height: 60px;
